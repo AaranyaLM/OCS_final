@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
 			
 			mysqli_query($con,"insert into sub_categories(categories_id,sub_categories,status) values('$categories','$sub_categories','1')");
 		}
-		header('location:sub_categories.php');
+		echo "<script>window.location.href='sub_categories.php';</script>";
 		die();
 	}
 }

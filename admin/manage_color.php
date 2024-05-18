@@ -1,6 +1,6 @@
 <?php
 require('top.inc.php');
-isAdmin();
+
 $color='';
 $msg='';
 if(isset($_GET['id']) && $_GET['id']!=''){

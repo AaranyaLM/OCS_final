@@ -2,10 +2,9 @@
 require('connection.inc.php');
 require('functions.inc.php');
 if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
-
 }else{
-	header('location:login.php');
-	die();
+header('location:login.php');
+die();
 }
 ?>
 <!doctype html>
@@ -44,16 +43,17 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
 						echo '<a href="order_master.php" > Order Master</a>';
 					 }
 					 ?>
-					 
-					 
-                  </li>
-				  <?php if($_SESSION['ADMIN_ROLE']!=1){?>
-				  <li class="menu-item-has-children dropdown">
+					 <li class="menu-item-has-children dropdown">
                      <a href="product_review.php" > Product Review</a>
                   </li>
-				  <li class="menu-item-has-children dropdown">
+					 
+                  </li>
+                  <li class="menu-item-has-children dropdown">
                      <a href="color.php" > Color Master</a>
                   </li>
+				  <?php if($_SESSION['ADMIN_ROLE']!=1){?>
+				  
+				  
 				  <li class="menu-item-has-children dropdown">
                      <a href="size.php" > Size Master</a>
                   </li>

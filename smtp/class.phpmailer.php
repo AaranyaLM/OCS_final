@@ -1710,17 +1710,10 @@ class PHPMailer
                             $this->Realm,
                             $this->Workstation
                         )
-                        ) {
-                            throw new phpmailerException($this->lang('authenticate'));
-                        }
-                    }
+                        ) 
+                    
                     return true;
-                } catch (phpmailerException $exc) {
-                    $lastexception = $exc;
-                    $this->edebug($exc->getMessage());
-                    // We must have connected, but then failed TLS or Auth, so close connection nicely
-                    $this->smtp->quit();
-                }
+                } 
             }
         }
         // If we get here, all connection attempts have failed, so close connection hard
@@ -1736,7 +1729,7 @@ class PHPMailer
      * Close the active SMTP session if one exists.
      * @return void
      */
-    public function smtpClose()
+    function smtpClose()
     {
         if (is_a($this->smtp, 'SMTP')) {
             if ($this->smtp->connected()) {
@@ -1755,7 +1748,7 @@ class PHPMailer
      * @return boolean
      * @access public
      */
-    public function setLanguage($langcode = 'en', $lang_path = '')
+    function setLanguage($langcode = 'en', $lang_path = '')
     {
         // Backwards compatibility for renamed language codes
         $renamed_langcodes = array(
@@ -1822,7 +1815,7 @@ class PHPMailer
      * Get the array of strings for the current language.
      * @return array
      */
-    public function getTranslations()
+    function getTranslations()
     {
         return $this->language;
     }
@@ -1837,7 +1830,7 @@ class PHPMailer
      * array(array('joe@example.com', 'Joe User'), array('zoe@example.com', 'Zoe User'))
      * @return string
      */
-    public function addrAppend($type, $addr)
+    function addrAppend($type, $addr)
     {
         $addresses = array();
         foreach ($addr as $address) {

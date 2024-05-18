@@ -53,7 +53,9 @@ if(isset($_POST['submit'])){
 		}else{
 			mysqli_query($con,"insert into coupon_master(coupon_code,coupon_value,coupon_type,cart_min_value,status) values('$coupon_code','$coupon_value','$coupon_type','$cart_min_value',1)");
 		}
-		header('location:coupon_master.php');
+		
+		echo "<script>window.location.href='coupon_master.php';</script>";
+
 		die();
 	}
 }
@@ -66,8 +68,6 @@ if(isset($_POST['submit'])){
                         <div class="card-header"><strong>Coupon</strong><small> Form</small></div>
                         <form method="post" enctype="multipart/form-data">
 							<div class="card-body card-block">
-							   
-								
 								<div class="form-group">
 									<label for="categories" class=" form-control-label">Coupon Code</label>
 									<input type="text" name="coupon_code" placeholder="Enter coupon code" class="form-control" required value="<?php echo $coupon_code?>">

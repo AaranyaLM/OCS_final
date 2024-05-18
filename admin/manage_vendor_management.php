@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
 		}else{
 			mysqli_query($con,"insert into admin_users(username,password,email,mobile,role,status) values('$username','$password','$email','$mobile',1,1)");
 		}
-		header('location:vendor_management.php');
+		echo "<script>window.location.href='vendor_management.php';</script>";
 		die();
 	}
 }

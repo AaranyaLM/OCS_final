@@ -8,18 +8,18 @@
                             <div class="footer">
                                 <h2 class="title__line--2">ABOUT US</h2>
                                 <div class="ft__details">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
+                                    <p>From the depth of L5CG7 emerges Group A with the greatest comeback of 21st century. Feel free to use our website.</p>
                                     <div class="ft__social__link">
                                         <ul class="social__link">
-                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
+                                            <li><a href="https://twitter.com/?lang=en"><i class="icon-social-twitter icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="https://www.instagram.com/"><i class="icon-social-instagram icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+                                            <li><a href="https://www.facebook.com/"><i class="icon-social-facebook icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-google icons"></i></a></li>
+                                            <li><a href="https://www.google.com/"><i class="icon-social-google icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/home"><i class="icon-social-linkedin icons"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -32,11 +32,9 @@
                                 <h2 class="title__line--2">information</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#">Privacy & Policy</a></li>
+                                        <li><a href="about.php">About us</a></li>
+                                        <li><a href="privacypolicy.php">Privacy & Policy</a></li>
                                         <li><a href="#">Terms  & Condition</a></li>
-                                        <li><a href="#">Manufactures</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,32 +46,15 @@
                                 <h2 class="title__line--2">my account</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="profile.php">My Account</a></li>
+                                        <li><a href="cart.php">My Cart</a></li>
+                                        <li><a href="wishlist.php">Wishlist</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <!-- End Single Footer Widget -->
-                        <!-- Start Single Footer Widget -->
-                        <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
-                            <div class="footer">
-                                <h2 class="title__line--2">Our service</h2>
-                                <div class="ft__inner">
-                                    <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.html">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Footer Widget -->
+
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
                             <div class="footer">

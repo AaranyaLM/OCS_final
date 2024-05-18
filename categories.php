@@ -80,7 +80,7 @@ if($cat_id>0){
                                 <div class="htc__select__option">
                                     <select class="ht__select" onchange="sort_product_drop('<?php echo $cat_id?>','<?php echo SITE_PATH?>')" id="sort_product_id">
                                         <option value="">Default softing</option>
-                                        <option value="price_low" <?php echo $price_low_selected?>>Sort by price low to hight</option>
+                                        <option value="price_low" <?php echo $price_low_selected?>>Sort by price low to high</option>
                                         <option value="price_high" <?php echo $price_high_selected?>>Sort by price high to low</option>
                                         <option value="new" <?php echo $new_selected?>>Sort by new first</option>
 										<option value="old" <?php echo $old_selected?>>Sort by old first</option>
@@ -110,7 +110,7 @@ if($cat_id>0){
 													</ul>
 												</div>
 												<div class="fr__product__inner">
-													<h4><a href="product-details.html"><?php echo $list['name']?></a></h4>
+													<h4><a href="product.php?id=<?php echo $list['id']?>"><?php echo $list['name']?></a></h4>
 													<ul class="fr__pro__prize">
 														<li class="old__prize"><?php echo $list['mrp']?></li>
 														<li><?php echo $list['price']?></li>
